@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-
+#import "DemoControllerViewController.h"
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -15,8 +15,26 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
+    DemoControllerViewController *vc = [[DemoControllerViewController alloc] init];
+    _navi = [[UINavigationController alloc]initWithRootViewController:vc];
+    self.window.rootViewController = _navi;
     [self.window makeKeyAndVisible];
     return YES;
+    
+    NSMutableArray *ar = [NSMutableArray arrayWithCapacity:0];
+    for (int i = 0; i < 8; i++) {
+        
+        [ar addObject:[NSNumber numberWithInteger:i]];
+    }
+    
+//    NSArray *arr = [ArrayConverseMatrix sideLineWithNumber:9 direction:kGWleft numberPerLine:3];
+    /*
+    for (int i = 0; i < arr.count; i++) {
+        NSLog(@"%d: value:%@ /n",i,arr[i]);
+        
+    }
+*/
+    
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application
