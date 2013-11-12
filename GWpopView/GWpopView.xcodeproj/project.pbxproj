@@ -220,7 +220,7 @@
 			name = GWPopView;
 			sourceTree = "<group>";
 		};
-		F3BBCB08182EB94F00F368EC /* Examples */ = {
+		F3BBCB08182EB94F00F368EC /* Demo */ = {
 			isa = PBXGroup;
 			children = (
 				F3BBCB1A182F376D00F368EC /* DemoControllerViewController.h */,
@@ -230,7 +230,7 @@
 				F3AB93081832015300786CC0 /* GWViewController.m */,
 				F3AB93091832015600786CC0 /* GWViewController.xib */,
 			);
-			name = Examples;
+			name = Demo;
 			sourceTree = "<group>";
 		};
 		F3E93319182C9E0E0081DCC8 = {
@@ -267,7 +267,7 @@
 			children = (
 				F3E93334182C9E0E0081DCC8 /* AppDelegate.h */,
 				F3E93335182C9E0E0081DCC8 /* AppDelegate.m */,
-				F3BBCB08182EB94F00F368EC /* Examples */,
+				F3BBCB08182EB94F00F368EC /* Demo */,
 				F3BBCB07182EB93700F368EC /* GWPopView */,
 				F3E9332C182C9E0E0081DCC8 /* Supporting Files */,
 			);
